@@ -102,7 +102,7 @@ public extension UIView {
         }
     }
     ///Set this view align to center of it's parent view. The TOP is a margin to top and LEFT is a margin to left
-    public func alignCenter(top: CGFloat = 0, _ left: CGFloat = 0){
+    public func alignCenter(top: CGFloat = 0, left: CGFloat = 0){
         if let parentWidth = self.superview?.frame.size.width {
             setFrame((parentWidth - self.frame.size.width) / 2 + left, self.frame.origin.y + top, self.frame.size.width, self.frame.size.height)
         }
@@ -122,7 +122,7 @@ public extension UIView {
         }
     }
     ///Set this view align to vertical center of it's parent view. The TOP is a margin to top and LEFT is a margin to left
-    public func verticalCenter(top: CGFloat = 0, _ left: CGFloat = 0){
+    public func verticalCenter(top: CGFloat = 0, left: CGFloat = 0){
         if let parentHeight = self.superview?.frame.size.height {
             setFrame(self.frame.origin.x + left, (parentHeight - self.frame.size.height) / 2 + top, self.frame.size.width, self.frame.size.height)
         }
@@ -146,7 +146,7 @@ public extension UIView {
         setFrame(self.frame.origin.x + left, self.frame.origin.y + top, self.frame.size.width, self.frame.size.height)
     }
     ///Set self to the RIGHT of the tView, the tView should in a same UIView with self. The percent should between 0 and 100
-    public func alignLeftToView(percent tView: UIView, _ left: CGFloat = 0) {
+    public func alignLeftToView(percent tView: UIView, left: CGFloat = 0) {
         guard let parentViewWidth = self.superview?.frame.size.width else {
             return
         }
@@ -156,11 +156,11 @@ public extension UIView {
         }
     }
     ///Set self to the RIGHT of the tView, the tView should in a same UIView with self
-    public func alignLeftToView(tView: UIView, _ left: CGFloat = 0) {
+    public func alignLeftToView(tView: UIView, left: CGFloat = 0) {
         setFrame(tView.frame.origin.x + tView.frame.size.width + left, self.frame.origin.y, self.frame.size.width, self.frame.size.height)
     }
     ///Set self to the LEFT of the tView, the tView should in a same UIView with self. The percent should between 0 and 100
-    public func alignRightToView(percent tView: UIView, _ right: CGFloat = 0) {
+    public func alignRightToView(percent tView: UIView, right: CGFloat = 0) {
         guard let parentViewWidth = self.superview?.frame.size.width else {
             return
         }
@@ -170,11 +170,11 @@ public extension UIView {
         }
     }
     ///Set self to the LEFT of the tView, the tView should in a same UIView with self
-    public func alignRightToView(tView: UIView, _ right: CGFloat = 0) {
+    public func alignRightToView(tView: UIView, right: CGFloat = 0) {
         setFrame(tView.frame.origin.x - self.frame.size.width - right, self.frame.origin.y, self.frame.size.width, self.frame.size.height)
     }
     ///Set self to the TOP of the tView, the tView should in a same UIView with self. The percent should between 0 and 100
-    public func alignTopToView(percent tView: UIView, _ top: CGFloat = 0) {
+    public func alignTopToView(percent tView: UIView, top: CGFloat = 0) {
         guard let parentViewHeight = self.superview?.frame.size.height else {
             return
         }
@@ -184,11 +184,11 @@ public extension UIView {
         }
     }
     ///Set self to the TOP of the tView, the tView should in a same UIView with self
-    public func alignTopToView(tView: UIView, _ top: CGFloat = 0) {
+    public func alignTopToView(tView: UIView, top: CGFloat = 0) {
         setFrame(self.frame.origin.x, tView.frame.origin.y + tView.frame.size.height + top, self.frame.size.width, self.frame.size.height)
     }
     ///Set self to the BOTTOM of the tView, the tView should in a same UIView with self. The percent should between 0 and 100
-    public func alignBottomToView(percent tView: UIView, _ bottom: CGFloat = 0) {
+    public func alignBottomToView(percent tView: UIView, bottom: CGFloat = 0) {
         guard let parentViewHeight = self.superview?.frame.size.height else {
             return
         }
@@ -198,7 +198,7 @@ public extension UIView {
         }
     }
     ///Set self to the BOTTOM of the tView, the tView should in a same UIView with self
-    public func alignBottomToView(tView: UIView, _ bottom: CGFloat = 0) {
+    public func alignBottomToView(tView: UIView, bottom: CGFloat = 0) {
         setFrame(self.frame.origin.x, tView.frame.origin.y - self.frame.size.height - bottom, self.frame.size.width, self.frame.size.height)
     }
     

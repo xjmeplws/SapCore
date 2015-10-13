@@ -15,26 +15,25 @@ enum NSDateError: ErrorType {
 
 let DEFAULT_FORMAT = "yyyy-MM-dd HH:mm:ss"
 
-public class aDate: NSDate {
-    
-    let dateFormat = NSDateFormatter()
+public extension String {
     //transfer
     public func dateFromDouble(dateValue: Double) -> NSDate {
         return NSDate(timeIntervalSince1970: dateValue)
     }
     
-    public func dateFromString(dateString: String, format: String = DEFAULT_FORMAT) -> NSDate? {
+    public func dateFromString(format: String = DEFAULT_FORMAT) -> NSDate {
         do {
-            return try doTransfer(dateString, format)
+            return try doTransfer(self, format)
         } catch let error as NSDateError {
             print("Transfer error:\(error)")
         }catch let error as NSError {
             print("Default error:\(error)")
         }
-        return nil
+        return NSDate()
     }
     private func doTransfer(dateString: String,_ format: String) throws -> NSDate {
         //if date format is not right
+        let dateFormat = NSDateFormatter()
         dateFormat.dateFormat = format
         guard let d = dateFormat.dateFromString(dateString) else {
             throw NSDateError.FormatError

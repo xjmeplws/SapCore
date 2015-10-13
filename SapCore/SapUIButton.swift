@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIButton {
-    //title
+    ///Set titles for the button, set "nil" or nothing when there is no state.
     public func setTitles(normal: String?, highlighted: String?, disabled: String?, selected: String?, application: String?, reserved: String?){
         if let n = normal {
             self.setTitle(n, forState: .Normal)
@@ -30,7 +30,7 @@ public extension UIButton {
             self.setTitle(r, forState: .Reserved)
         }
     }
-    //background image
+    ///Set a background image for the button by image name, set "nil" or nothing when there is no state.
     public func setBackgroundImageByString(normal: String?, highlighted: String?, disabled: String?, selected: String?, application: String?, reserved: String?){
         let n = normal == nil ? nil : UIImage(named: normal!)
         let h = highlighted == nil ? nil : UIImage(named: highlighted!)
@@ -40,6 +40,7 @@ public extension UIButton {
         let r = reserved == nil ? nil : UIImage(named: reserved!)
         setBackgroundImageByUIImage(n, highlighted: h, disabled: d, selected: s, application: a, reserved: r)
     }
+    ///Set a background image for the button by image, set "nil" or nothing when there is no state.
     public func setBackgroundImageByUIImage(normal: UIImage?, highlighted: UIImage?, disabled: UIImage?, selected: UIImage?, application: UIImage?, reserved: UIImage?){
         if let n = normal {
             self.setBackgroundImage(n, forState: .Normal)
@@ -60,7 +61,7 @@ public extension UIButton {
             self.setBackgroundImage(r, forState: .Reserved)
         }
     }
-    //background color
+    ///Set a background color for the button by a UInt value.
     public func setBackgroundColorByValue(rgbValue: UInt){
         self.titleLabel?.frame = self.frame
         self.backgroundColor = UIColor().fromRGB(rgbValue)
