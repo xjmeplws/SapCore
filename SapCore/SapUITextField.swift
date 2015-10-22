@@ -15,9 +15,7 @@ public extension UITextField{
     }
     
     public var isEmpty: Bool {
-        get{
-            return self.text == ""
-        }
+        return self.text == ""
     }
     
     public func validate(RegEx: String) -> Bool {
@@ -25,20 +23,14 @@ public extension UITextField{
     }
     
     public var isEmail: Bool {
-        get{
-            return self.validate("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}")
-        }
+        return self.validate("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}")
     }
     
     public var isNumber: Bool {
-        get{
-            return self.validate("^[0-9]*$")
-        }
+        return self.validate("^[0-9]*$")
     }
     
     public var length: Int {
-        get{
-            return self.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-        }
+        return self.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
     }
 }

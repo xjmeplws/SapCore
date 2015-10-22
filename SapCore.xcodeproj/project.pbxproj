@@ -15,6 +15,7 @@
 		E68F36071BC917C10073357F /* SapColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F36061BC917C10073357F /* SapColor.swift */; settings = {ASSET_TAGS = (); }; };
 		E68F360E1BCB89D40073357F /* SapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F360D1BCB89D40073357F /* SapUIView.swift */; settings = {ASSET_TAGS = (); }; };
 		E68F36121BCCA75E0073357F /* SapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F36111BCCA75E0073357F /* SapUIViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E68F36141BCE10F70073357F /* SapJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F36131BCE10F70073357F /* SapJson.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E68F36061BC917C10073357F /* SapColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapColor.swift; sourceTree = "<group>"; };
 		E68F360D1BCB89D40073357F /* SapUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapUIView.swift; sourceTree = "<group>"; };
 		E68F36111BCCA75E0073357F /* SapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapUIViewController.swift; sourceTree = "<group>"; };
+		E68F36131BCE10F70073357F /* SapJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				E68F35FB1BC8FF530073357F /* SapUITextField.swift */,
 				E68F360D1BCB89D40073357F /* SapUIView.swift */,
 				E68F36111BCCA75E0073357F /* SapUIViewController.swift */,
+				E68F36131BCE10F70073357F /* SapJson.swift */,
 			);
 			path = SapCore;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				E68F35FF1BC8FF530073357F /* SapUIButton.swift in Sources */,
 				E68F36121BCCA75E0073357F /* SapUIViewController.swift in Sources */,
 				E68F35D81BC8F8F00073357F /* SapString.swift in Sources */,
+				E68F36141BCE10F70073357F /* SapJson.swift in Sources */,
 				E68F35FE1BC8FF530073357F /* SapDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -101,46 +101,30 @@ public extension NSDate {
     
     //date components detail
     public var components: NSDateComponents {
-        get{
-            let calendar = NSCalendar.currentCalendar()
-            let unitFlag: NSCalendarUnit = [.Year, .Month, .Day, .Weekday, .Hour, .Minute, .Second]
-            return calendar.components(unitFlag, fromDate: self)
-        }
+        let calendar = NSCalendar.currentCalendar()
+        let unitFlag: NSCalendarUnit = [.Year, .Month, .Day, .Weekday, .Hour, .Minute, .Second]
+        return calendar.components(unitFlag, fromDate: self)
     }
     
     public var year: Int {
-        get{
-            return components.year
-        }
+        return components.year
     }
     public var month: Int {
-        get{
-            return components.month
-        }
+        return components.month
     }
     public var day: Int {
-        get{
-            return components.day
-        }
+        return components.day
     }
     public var week: Int {
-        get{
-            return components.weekday
-        }
+        return components.weekday
     }
     public var hour: Int {
-        get{
-            return components.hour
-        }
+        return components.hour
     }
     public var minute: Int {
-        get{
-            return components.minute
-        }
+        return components.minute
     }
     public var second: Int {
-        get{
-            return components.second
-        }
+        return components.second
     }
 }
