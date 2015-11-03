@@ -3,7 +3,7 @@ Just a program of my testing
 
 Easy to use UIView in iOS program.
 
-Just put the project to your own program, the "import SapCore".
+Just put the project to your own program, then "import SapCore".
 
 UITextFiels:
 
